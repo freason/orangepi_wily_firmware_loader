@@ -14,10 +14,10 @@ it says:
 
 ## what you need to do
 if you want to use hardware with firmware orangepi wily, 
-1. you should replace the "/lib/udev/rules.d/50-firmware.rules" in the wily with the one I provided
-2. you have to build the firmware.c in the orangepi ubuntu or with a cross compiling tool, I compiled it with arm-linux-gnueabi-gcc, you can use apt-get to install it. There is a prebuilt binary file in the prebuilt directory. copy it to "/lib/udev"
-3. orangepi wily doesn't provide firmware, you have to copy the firmware from other source. I copied them from PC ubuntu.2. you have to build the firmware.c in the orangepi ubuntu or with a cross compiling tool, I compiled it with arm-linux-gnueabi-gcc, you can use apt-get to install it. There is a prebuilt binary file in the prebuilt directory. copy it to "/lib/udev"
-3. orangepi wily doesn't provide firmware, you have to copy the firmware from other source. I copied them from PC ubuntu.
+- 1. you should replace the "/lib/udev/rules.d/50-firmware.rules" in the wily with the one I provided
+- 2. you have to build the firmware.c in the orangepi ubuntu or with a cross compiling tool, I compiled it with arm-linux-gnueabi-gcc, you can use apt-get to install it. There is a prebuilt binary file in the prebuilt directory. copy it to "/lib/udev"
+- 3. orangepi wily doesn't provide firmware, you have to copy the firmware from other source. I copied them from PC ubuntu.2. you have to build the firmware.c in the orangepi ubuntu or with a cross compiling tool, I compiled it with arm-linux-gnueabi-gcc, you can use apt-get to install it. There is a prebuilt binary file in the prebuilt directory. copy it to "/lib/udev"
+- 4. orangepi wily doesn't provide firmware, you have to copy the firmware from other source. I copied them from PC ubuntu.
 
 ## about the firmware.c
 I copied function set_loading, copy_firmware, and builtin_firmware from udev-builtin-firmware.c, and remove the dependence to udev. now, it only use std features and little linux feature.
